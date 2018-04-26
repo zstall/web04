@@ -130,7 +130,7 @@ header {
 	background-color: #555555;
 }
 
-.container:hover .overlay {
+.container:hover .overlay, .container:active .overlay {
 	opacity: 1;
 }
 
