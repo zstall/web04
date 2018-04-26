@@ -124,12 +124,24 @@ header {
 	height: 100%;
 	width: 100%;
 	opacity: 0;
-	transition: .4s ease;
+	transition: .5s ease;
 	background-color: #555555;
 }
 
+#grey {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	transition: .8s ease;
+}
+
+
+
 .container:hover .overlay, .container:active .overlay {
 	opacity: 1;
+}
+
+.color:hover #grey {
+	filter: grayscale(0%);
 }
 
 .text {
@@ -143,7 +155,3 @@ header {
 	text-align: center;
 }
 
-#grey {
-	-webkit-filter: grayscale(75%);
-	filter: grayscale(60%);
-}
