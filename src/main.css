@@ -50,6 +50,10 @@ header {
 	padding: 5px;
 }
 
+img {
+	image-orientation: from-image;
+}
+
 .row {
 	display: flex;
 	flex-wrap: wrap;
@@ -77,13 +81,7 @@ header {
 
 @media screen and (max-width: 1440px) {
 	
-	/*
-	.column {
-		flex: 33.3333%;
-		max-width: 33.33333%;
-	}
-	*/
-	.row {
+		.row {
 		padding: 0 5px !important;
 	}
 }
@@ -128,9 +126,10 @@ header {
 	background-color: #555555;
 }
 
-#grey {
+.gray {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
+	-webkit-transition: .8s ease;
 	transition: .8s ease;
 }
 
@@ -140,8 +139,8 @@ header {
 	opacity: 1;
 }
 
-.color:hover #grey {
-	filter: grayscale(0%);
+.color:hover .gray {
+	filter: grayscale(10%);
 }
 
 .text {
