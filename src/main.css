@@ -28,7 +28,7 @@ h1 {
 h2 {
 	color: #ffffff;
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 32px;
 	font-weight: 100;
 	margin: 5px 25px 10px 25px;
 	text-align: left;	
@@ -81,12 +81,15 @@ header {
 
 
 @media screen and (max-width: 1440px) {
+	
+	/*
 	.column {
 		flex: 33.3333%;
 		max-width: 33.33333%;
 	}
+	*/
 	.row {
-		padding: 0 50px !important;
+		padding: 0 5px !important;
 	}
 }
 
@@ -136,11 +139,16 @@ header {
 
 .text {
 	color: #ffffff;
-	font-size: 16px;
+	font-size: 24px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	text-align: center;
+}
+
+#grey {
+	-webkit-filter: grayscale(75%);
+	filter: grayscale(60%);
 }
