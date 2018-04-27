@@ -1,5 +1,7 @@
 /* main.css */
 
+/* CSS for entire doc - This is where the big decisions get made */
+
 html, body, h1, h2, h3, h4, p, div, ul, ol, li {
 	padding: 0;
 	border: 0;
@@ -21,7 +23,7 @@ h1 {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 40px;
 	font-weight: 300;
-	margin: 10px 25px 0 25px;
+	margin: 5px 25px;
 	text-align: left;
 }
 
@@ -30,8 +32,31 @@ h2 {
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
 	font-size: 32px;
 	font-weight: 100;
-	margin: 5px 25px 10px 25px;
+	margin: 0 25px;
 	text-align: left;	
+}
+
+h3 {
+	color: #888888;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: 100;
+	margin: 5px 30px;
+	text-align: left;	
+}
+
+p {
+	color: #555555;
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0;
+	text-align: left;
+	padding: 0;
+}
+
+.header01 h1 {
+	max-width: 80%;
 }
 
 a {
@@ -43,32 +68,70 @@ a:hover {
 	color: #21cbc8;
 }
 
-header {
+.top {
 	background-color: #555555;
 	border: 0;
 	height: auto;
 	padding: 5px;
+	width: 100%;
 }
 
+.bottom {
+	border: 0;
+	height: auto;
+	padding: 5px;
+	border-bottom: 2px solid black;	
+}
+
+.box {
+	width: 80%;
+	margin: 5px auto;
+}
+
+.aboutmetext {
+	max-width: 75%;
+	margin: 0 auto;
+	padding: 15px 40px;
+	border-bottom: 2px solid black;
+}
+
+.aboutmetext h2 {
+	color: #777777;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.nav a, p a {
+	color: #888888;
+}
+
+/* ???REMOVE??? */ 
 img {
 	image-orientation: from-image;
 }
+/* ???REMOVE??? */
 
+/* Index.html - regular notation
+ * About Me - 01
+ *
+ * Because why would this not be a good idea??? I'm sure I'll find out soon enough.
+ */
+
+/* This will create a row for the image grid */
 .row {
 	display: flex;
 	flex-wrap: wrap;
 	padding: 10px 200px;
 }
 
-/* Create four equal columns that are next to each othre */
-
+/* Create four equal columns that are next to each other for image grid */
 .column {
 	flex: 25%;
 	max-width: 25%;
 	padding: 0 1px;
 }
 
-
+/* No comment necessary... wait... DANGIT! */
 .column img {
 	margin-top: 8px;
 	vertical-align: middle;
@@ -79,6 +142,20 @@ img {
 }
 
 
+.aboutme01 {
+
+	float: right;
+	height: 756px;
+	margin-left: 15px;
+	width: 567px;
+}
+
+.aboutme01 img {
+	width: auto;
+	height: 100%;
+}
+
+/* Adjust margin for when screen is reduced to half screenish */
 @media screen and (max-width: 1440px) {
 	
 		.row {
@@ -86,7 +163,7 @@ img {
 	}
 }
 
-
+/* mobile mode, two columns */
 @media screen and (max-width: 800px) {
 	.column {
 		flex: 50%;
@@ -95,8 +172,34 @@ img {
 	.row {
 		padding: 0 10px !important;
 	}
+
+	.aboutme01  {
+		float: none !important;
+		display: block !important;
+		height: 1000 !important;
+		width: 750px !important;
+		margin: 15px auto !important;
+	}
+
+	h1 {
+		font-size: 32px !important;
+	}
+
+	h2 {
+		font-size: 24px !important;
+	}
+
+	h3 {
+		font-size: 20px !important;
+	}
+
+	p {
+		font-size: 16px !important;
+	}
+
 }
 
+/* mobile mode number two, one column */
 @media screen and (max-width: 600px) {
 	.column {
 		flex: 100%;
@@ -106,13 +209,104 @@ img {
 	.row {
 		padding: 0 10px !important;
 	}
+	.aboutme01  {
+		float: none !important;
+		display: block !important;
+		height: 733.33 !important;
+		width: 550px !important;
+		margin: 15px auto !important;
+	}
+
+	h1 {
+		font-size: 32px !important;
+	}
+
+	h2 {
+		font-size: 24px !important;
+	}
+
+	h3 {
+		font-size: 20px !important;
+	}
+
+	p {
+		font-size: 16px !important;
+	}
 }
 
+@media screen and (max-width: 414px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+		padding: 0 1px !important;
+	}
+	.row {
+		padding: 0 10px !important;
+	}
+	.aboutme01  {
+		float: none !important;
+		display: block !important;
+		height: 400 !important;
+		width: 300px !important;
+		margin: 15px auto !important;
+	}
+
+	h1 {
+		font-size: 32px !important;
+	}
+
+	h2 {
+		font-size: 24px !important;
+	}
+
+	h3 {
+		font-size: 20px !important;
+	}
+
+	p {
+		font-size: 16px !important;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.column {
+		flex: 100%;
+		max-width: 100%;
+		padding: 0 1px !important;
+	}
+	.row {
+		padding: 0 10px !important;
+	}
+	.aboutme01  {
+		float: none !important;
+		display: block !important;
+		height: 400 !important;
+		width: 300 !important;
+		margin: 15px auto !important;
+	}
+
+	h1 {
+		font-size: 24px !important;
+	}
+
+	h2 {
+		font-size: 20px !important;
+	}
+
+	h3 {
+		font-size: 18px !important;
+	}
+
+	p {
+		font-size: 14px !important;
+	}
+}
+
+/* Styling for hover effects on index.html */
 .container {
 	position: relative;
 	width: 100%;
 }
-
 .overlay {
 	position: absolute;
 	top: 0;
@@ -125,24 +319,18 @@ img {
 	transition: .5s ease;
 	background-color: #555555;
 }
-
 .gray {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .8s ease;
 	transition: .8s ease;
 }
-
-
-
 .container:hover .overlay, .container:active .overlay {
 	opacity: 1;
 }
-
 .color:hover .gray {
 	filter: grayscale(10%);
 }
-
 .text {
 	color: #ffffff;
 	font-size: 24px;
@@ -153,4 +341,5 @@ img {
 	-ms-transform: translate(-50%, -50%);
 	text-align: center;
 }
+
 
