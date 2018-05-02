@@ -101,6 +101,10 @@ a:hover {
 	text-align: center;
 }
 
+.nav a {
+	padding: 0 15px 0 0;
+}
+
 .nav a, p a {
 	color: #888888;
 }
