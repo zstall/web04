@@ -196,7 +196,7 @@ img {
 		margin: 15px auto !important;
 	}
 
-	.aboutmetext {
+	.aboutmetext, .aboutaztext {
 		max-width: 90% !important;
 		margin: 0 auto !important;
 		padding: 10px 5px !important;
@@ -231,14 +231,14 @@ img {
 	.row {
 		padding: 0 10px !important;
 	}
-	.aboutme01  {
+	.aboutme01, .aboutaz01  {
 		float: none !important;
 		display: block !important;
 		height: auto !important;
 		max-width: 250px !important;
 		margin: 15px auto !important;
 	}
-	.aboutmetext {
+	.aboutmetext, .aboutaztext {
 		max-width: 90% !important;
 		margin: 0 auto !important;
 		padding: 10px 5px !important;
@@ -271,14 +271,14 @@ img {
 	.row {
 		padding: 0 10px !important;
 	}
-	.aboutme01  {
+	.aboutme01, .aboutaz01 {
 		float: none !important;
 		display: block !important;
 		height: auto !important;
 		max-width: 125px !important;
 		margin: 15px auto !important;
 	}
-	.aboutmetext {
+	.aboutmetext, .aboutaztext {
 		max-width: 90% !important;
 		margin: 0 auto !important;
 		padding: 10px 5px !important;
@@ -311,14 +311,14 @@ img {
 	.row {
 		padding: 0 10px !important;
 	}
-	.aboutme01  {
+	.aboutme01, .aboutaz01  {
 		float: none !important;
 		display: block !important;
 		height: auto !important;
 		width: 100px !important;
 		margin: 15px auto !important;
 	}
-	.aboutmetext {
+	.aboutmetext, .aboutaztext {
 		max-width: 90% !important;
 		margin: 0 auto !important;
 		padding: 10px 5px !important;
