@@ -88,14 +88,18 @@ a:hover {
 	margin: 5px auto;
 }
 
-.aboutmetext {
+.aboutmetext, .aboutaztext {
 	max-width: 75%;
 	margin: 0 auto;
 	padding: 15px 40px;
 	border-bottom: 2px solid black;
 }
 
-.aboutmetext h2 {
+.aboutaztext ul {
+	list-style: none;
+}
+
+.aboutmetext h2, .aboutaztext h2 {
 	color: #777777;
 	margin-bottom: 20px;
 	text-align: center;
@@ -154,7 +158,14 @@ img {
 	width: 567px;
 }
 
-.aboutme01 img {
+.aboutaz01 {
+	float: right;
+	height: 400px;
+	margin-left: 5px;
+	width: 500px;
+}
+
+.aboutme01 img, .aboutaz01 img {
 	width: 100%;
 	height: auto;
 }
@@ -177,7 +188,7 @@ img {
 		padding: 0 10px !important;
 	}
 
-	.aboutme01  {
+	.aboutme01, .aboutaz01 {
 		float: none !important;
 		display: block !important;
 		height: auto !important;
