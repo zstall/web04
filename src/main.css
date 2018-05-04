@@ -1,6 +1,11 @@
 /* main.css */
 
 /* CSS for entire doc - This is where the big decisions get made */
+
+/* ----- Imports ----- */
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
 /* Reseting all styling */
 html, body, h1, h2, h3, h4, p, div, ul, ol, li {
 	padding: 0;
@@ -147,10 +152,17 @@ a:hover {
 
 /* ----- Creating two columns for pcbuilds page ----- */
 
+/*main for pcbuilds*/
+.pcbuildsrow {
+	background-color: #f15d22;
+}
+
 /*Left Column*/
 .pcbuildsleftcolumn {
 	float: left;
 	width: 75%;
+	padding-bottom: 25px;
+	background-color: #fff;
 }
 
 /*Right Column*/
@@ -158,6 +170,7 @@ a:hover {
 	float: left;
 	width: 25%;
 	padding-left: 20px;
+	background-color: #fff;
 }
 
 .pcbuildsimg {
@@ -271,6 +284,119 @@ a:hover {
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	text-align: center;
+}
+
+/* ----- End Main Body ----- */
+/* ----- Footer ----- */
+
+.footer-social-icons {
+	background-color: #888888;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+}
+
+.sibackground {
+	text-align: center;
+}
+
+.social-icon {
+	color: #2d2d2d;
+}
+
+.footer-social-icons h3, .footer-social-icons p, #email {
+	color: #fff;
+	padding: 1%;
+	text-align: center;
+}
+
+.social-icons li {
+	vertical-align: top;
+	display: inline;
+	margin: .25%;
+}
+
+.social-icons a {
+	color: #2d2d2d;
+	text-decoration: none;
+}
+
+.fa-facebook {
+    padding: .5% .75%;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-facebook:hover {
+    background-color: #3d5b99;
+}
+
+.fa-twitter {
+    padding: .5% .75%;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-twitter:hover {
+    background-color: #00aced;
+}
+
+.fa-git {
+    padding: .5% .75%;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-git:hover {
+    background-color: #eb8231;
+}
+
+.fa-instagram {
+    padding: .5% .75%;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-instagram:hover {
+    background-color: #fb3958;
+}
+
+.fa-linkedin {
+    padding: .5% .75%;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-linkedin:hover {
+    background-color: #0073a4;
+}
+
+.fa-google {
+    padding: .5% .75%;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+    background-color: #d2d2d2;
+}
+.fa-google:hover {
+    background-color: #e25714;
 }
 
 /* ----- Responsive Design Styling ----- */
