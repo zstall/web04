@@ -116,12 +116,16 @@ a:hover {
 .box {
 	width: 80%;
 	margin: 5px auto;
-
-
 }
 /* ----- End Header Styling-----*/
 
 /* ----- Formatting Body & Text ---- */
+.tagline {
+	max-width: 80%;
+	margin: 0 auto;
+	padding: 15px 15px;
+}
+
 .aboutmetext, .aboutaztext {
 	max-width: 80%;
 	margin: 0 auto;
