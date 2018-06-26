@@ -64,7 +64,7 @@ h4 {
 p {
 	color: #555555;
 	font-family: "Helvetica Neue", Helvetica, sans-serif;
-	font-size: 20px;
+	font-size: 16px;
 	font-weight: 700;
 	margin: 0;
 	text-align: left;
@@ -124,6 +124,10 @@ a:hover {
 	max-width: 80%;
 	margin: 0 auto;
 	padding: 15px 15px;
+}
+
+.aboutmetext p {
+	font-size: 18px;
 }
 
 .aboutmetext, .aboutaztext {
@@ -287,7 +291,7 @@ a:hover {
 
 .text {
 	color: #ffffff;
-	font-size: 11px;
+	font-size: 14px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
