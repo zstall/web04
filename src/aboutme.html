@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<meta name="description" content="See my the current state of my studies/knowledge. Also, find my resume and a lengthier about me. For any additional information or questions, please contact me!">
+		<meta name="description" content="See the current state of my studies/knowledge. Also, find my resume and a lengthier about me. For any additional information or questions, please contact me!">
 		<meta name="keywords" content="Python, Java, HTML5, CSS, PHP, JavaScript, Lectora, DreamWeaver, Sublime Text Editor, SQL, mySQL">
 		<meta name="author" content="Zachary Stall">
 		<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
@@ -19,12 +19,20 @@
 					<h2>About Me - My journey to programmer.</h2>
 				</div>
 			</div>
-			<div class="bottom">
+			<div class="bottom" id="navbar">
 				<div class="box">
 					<h3 class="nav">
 						<a href="index.html">home</a>
 						<a href="aboutme.html" alt="">aboutMe</a>
-						<a href="pcbuilds.html">pcBuilds</a>
+						<div class="dropdown">
+							<a href="pcbuilds.html" alt="">pcBuilds</a>
+							<div class="dropdown-content">
+								<h3><a href="pcbuilds.html#zero">|Zero|</a></h3>
+								<h3><a href="pcbuilds.html#ember">Ember</a></h3>
+								<h3><a href="pcbuilds.html#ammocan">Ammo Can</a></h3>
+								<h3><a href="pcbuilds.html#ww">Heisenberg</a></h3>
+							</div>
+						</div>
 					</h3>
 				</div>
 			</div>
@@ -95,5 +103,6 @@
 			<p>To email me, click here:<a id="email" href="mailto: zstall4@gmail.com"> zstall4@gmail.com</a></p>
 		</footer>
 		<!-- End Footer -->
+		<script src="scripts.js"></script>
 	</body>
 </html>
