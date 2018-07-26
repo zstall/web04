@@ -87,6 +87,7 @@ a:hover {
 	position: fixed;
 	top: 0px;
 	width: 100%;
+	margin-bottom: 25px;
 }
 
 #navbar {
