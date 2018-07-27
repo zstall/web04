@@ -82,16 +82,14 @@ a:hover {
 
 /* ----- Formatting Header ------ */
 
-
 .sticky {
 	position: fixed;
 	top: 0px;
 	width: 100%;
-	margin-bottom: 25px;
+	margin-bottom: 50px;
 }
 
 #navbar {
-	
 	background-color: #eeeeee;
 	z-index: 999;
 }
@@ -218,10 +216,13 @@ a:hover {
 }
 
 
+
+
+
 /*Add style to sections of pcbuilds*/
 .pcbuildscard {
 	background-color: white;
-	padding: 20px;
+	padding: 40px;
 	margin-top: 20px;
 	max-width: 80%;
 	margin-right: auto;
